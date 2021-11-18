@@ -13,6 +13,7 @@ public class Util {
         String password = "root";
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
+            connection.setAutoCommit(false);
             System.out.println("Молодец, соединение с БД успешно установлено");
         } catch(Exception ex){
             System.out.println("Ошибка, не удалось выполнить соединение с БД");

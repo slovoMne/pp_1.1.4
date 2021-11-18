@@ -2,8 +2,10 @@ package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 
+import java.sql.SQLException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
         //userDaoJDBC.createUsersTable();
