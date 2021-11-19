@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f892c869-92a6-4296-8165-d868049c2cdf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,9 @@
       <workItem from="1637222606286" duration="2001000" />
       <workItem from="1637229852509" duration="1115000" />
       <workItem from="1637231171579" duration="854000" />
-      <workItem from="1637232701319" duration="1856000" />
+      <workItem from="1637232701319" duration="5897000" />
+      <workItem from="1637298845837" duration="989000" />
+      <workItem from="1637308064543" duration="561000" />
     </task>
     <servers />
   </component>
