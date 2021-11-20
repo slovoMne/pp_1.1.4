@@ -12,10 +12,13 @@ public class Util {
         String username = "root";
         String password = "root";
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, username, password);
             connection.setAutoCommit(false);
-            System.out.println("Молодец, соединение с БД успешно установлено");
-        } catch(Exception ex){
+            if (!connection.isClosed()) {
+                System.out.println("Молодец, соединение с БД успешно установлено");
+            }
+        } catch (SQLException | ClassNotFoundException ex) {
             System.out.println("Ошибка, не удалось выполнить соединение с БД");
             ex.printStackTrace();
 
