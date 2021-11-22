@@ -8,12 +8,8 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private long id;
-    private String name;
-    private String lastName;
-    private byte age;
 
-    public UserDao userDao = new UserDaoJDBCImpl();
+    private UserDao userDao = new UserDaoJDBCImpl();
 
     public void createUsersTable() throws Exception {
         userDao.createUsersTable();
