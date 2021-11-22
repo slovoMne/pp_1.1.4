@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
     private String lastName;
     private byte age;
 
-    UserDao userDao = new UserDaoJDBCImpl();
+    public UserDao userDao = new UserDaoJDBCImpl();
 
     public void createUsersTable() throws Exception {
         userDao.createUsersTable();
@@ -24,14 +24,10 @@ public class UserServiceImpl implements UserService {
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
         userDao.saveUser(name, lastName, age);
     }
 
     public void removeUserById(long id) throws SQLException {
-        this.id = id;
         userDao.removeUserById(id);
     }
 
