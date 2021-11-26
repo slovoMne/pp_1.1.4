@@ -10,13 +10,13 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
-    private UserDaoHibernateImpl userDao = new UserDaoHibernateImpl();
+    private UserDao userDao = new UserDaoHibernateImpl();
 
-    public void createUsersTable() {
+    public void createUsersTable() throws Exception {
         userDao.createUsersTable();
     }
 
-    public void dropUsersTable() {
+    public void dropUsersTable() throws SQLException {
         userDao.dropUsersTable();
     }
 
@@ -24,15 +24,15 @@ public class UserServiceImpl implements UserService {
         userDao.saveUser(name, lastName, age);
     }
 
-    public void removeUserById(long id) {
+    public void removeUserById(long id) throws SQLException {
         userDao.removeUserById(id);
     }
 
-    public List<User> getAllUsers() {
+    public List<User> getAllUsers() throws SQLException {
         return userDao.getAllUsers();
     }
 
-    public void cleanUsersTable() {
+    public void cleanUsersTable() throws SQLException {
         userDao.cleanUsersTable();
     }
 }
