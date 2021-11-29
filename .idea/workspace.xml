@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,10 +65,10 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
-      <module name="TaskJDBC" />
+      <module name="pp_1.1.4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jm.task.core.jdbc.*" />
@@ -110,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest (1)" />
         <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest" />
       </list>
     </recent_temporary>
@@ -153,7 +152,10 @@
       <workItem from="1637835584724" duration="6041000" />
       <workItem from="1637854198396" duration="1667000" />
       <workItem from="1637928143309" duration="762000" />
-      <workItem from="1637930925439" duration="3382000" />
+      <workItem from="1637930925439" duration="4019000" />
+      <workItem from="1638183883478" duration="1730000" />
+      <workItem from="1638185755484" duration="787000" />
+      <workItem from="1638197757503" duration="1090000" />
     </task>
     <servers />
   </component>

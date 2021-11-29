@@ -1,7 +1,5 @@
 package jm.task.core.jdbc.util;
 
-//import jdk.internal.access.JavaIOFileDescriptorAccess;
-
 import jm.task.core.jdbc.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -27,14 +25,21 @@ public class Util {
             try {
                 Configuration configuration = new Configuration();
                 Properties settings = new Properties();
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/mydbtest");
-                settings.put(Environment.USER, "root");
-                settings.put(Environment.PASS, "root");
+                settings.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/mydbtest?useSSL=false");
+                settings.setProperty("hibernate.connection.username", "root");
+                settings.setProperty("hibernate.connection.password", "root");
+                settings.setProperty("dialect", "org.hibernate.dialect.MySQL8Dialect");
+                settings.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
+                settings.setProperty("hibernate.current_session_context_class", "thread");
+                settings.setProperty("show_sql", "true");
+                settings.setProperty("hibernate.hbm2ddl.auto", "update");
+
                 configuration.setProperties(settings);
                 configuration.addAnnotatedClass(User.class);
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
                 sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+
                 System.out.println("Well done!! Connection successful! Hibernate is working)");
             } catch (Exception e) {
                 e.printStackTrace();
